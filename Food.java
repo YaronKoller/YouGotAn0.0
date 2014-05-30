@@ -7,9 +7,9 @@ public class Food{
   private int calories;
   private boolean kosher;
   
-  public Food(String t, String p, int c, boolean k, double p, int id, int a){
+  public Food(String t, String pr, int c, boolean k, double p, int id, int a){
     type = t;
-    producer = p;
+    producer = pr;
     calories = c;
     kosher = k;
     super(p, id, a);
