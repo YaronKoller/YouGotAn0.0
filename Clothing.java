@@ -1,6 +1,6 @@
 package project;
 
-public class Clothing{
+public class Clothing extends Product{
   
   private String type;
   private String brand;
@@ -12,6 +12,6 @@ public class Clothing{
     brand = b;
     colour = c;
     material = m;
-    supet(p, id, a);
+    super(p, id, a);
   }
 }
