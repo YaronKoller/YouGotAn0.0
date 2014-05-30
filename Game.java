@@ -1,6 +1,6 @@
 package project;
 
-public class Game{
+public class Game extends Product{
   
   private String title;
   private String genre;
