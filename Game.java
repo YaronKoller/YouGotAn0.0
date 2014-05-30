@@ -7,11 +7,11 @@ public class Game{
   private String developer;
   private String ageRestriction;
   
-  public Game(String t, String g, String d, String a, double p, int id, int a){
+  public Game(String t, String g, String d, String ar, double p, int id, int a){
     title = t;
     genre = g;
     developer = d;
-    ageRestriction = a;
+    ageRestriction = ar;
     super(p, id, a);
   }
 }
