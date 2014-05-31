@@ -14,4 +14,16 @@ public class Food extends Product{
     kosher = k;
     super(p, id, a);
   }
+  
+  public int getCalories(){
+    return calories;
+  }
+  
+  public boolean getKosher(){
+    return kosher;
+  }
+  
+  public String toString(){
+    return (producer + " " + type);
+  }
 }
