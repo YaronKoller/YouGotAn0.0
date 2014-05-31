@@ -12,6 +12,13 @@ public class Admin{
     name = n;
   }
   
+  public boolean signIn(String pass){
+    if(pass.equals(password))
+      return true;
+    else
+      return false;
+  }
+  
   public String getID(){
     return ID;
   }
