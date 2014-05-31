@@ -15,6 +15,14 @@ public class Food extends Product{
     super(p, id, a);
   }
   
+  public String getType(){
+    return type;
+  }
+  
+  public String getProducer(){
+    return producer;
+  }
+  
   public int getCalories(){
     return calories;
   }
