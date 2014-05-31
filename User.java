@@ -22,15 +22,15 @@ public class User{
   }
   
   public boolean modifyInfo(int choice, String newInfo){
-    if(choice=1){
+    if(choice==1){
       email = newInfo;
       return true;
     }
-    else if(choice=2){
+    else if(choice==2){
       password = newInfo;
       return true;
     }
-    else if(choice=3){
+    else if(choice==3){
       name = newInfo;
       return true;
     }
