@@ -19,7 +19,7 @@ public class Admin{
       return false;
   }
   
-  public String getID(){
+  public int getID(){
     return ID;
   }
   
