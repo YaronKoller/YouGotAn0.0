@@ -13,15 +13,33 @@ public class ShoppingCart{
   }
   
   public void addProduct(cl: Clothing){
+    Clothing[] temp = new Clothing[c.length+1];
     
+    for(int i=0; i<c.length; i++)
+      temp[i]=c[i];
+    
+    temp[c.length] = cl;
+    c = temp;
   }
   
   public void addProduct(ga: Game){
+    Game[] temp = new Game[g.length+1];
     
+    for(int i=0; i<g.length; i++)
+      temp[i]=g[i];
+    
+    temp[g.length] = ga;
+    g = temp;
   }
   
   public void addProduct(fo: Food){
+    Food[] temp = new Food[f.length+1];
     
+    for(int i=0; i<f.length; i++)
+      temp[i]=f[i];
+    
+    temp[f.length] = fo;
+    f = temp;
   }
   
   public String[] listProducts(){
