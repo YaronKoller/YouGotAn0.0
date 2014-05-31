@@ -30,7 +30,13 @@ public class Product{
   }
   
   public void addRating(int r){
-    int[] temp = new int[r.length+1];
+    int[] temp = new int[ratings.length+1];
+    
+    for(int i=0; i<ratings.length; i++)
+      temp[i]=ratings[i];
+    
+    temp[ratings.length] = r;
+    ratings = temp;
   }
   
   public double getPrice(){
