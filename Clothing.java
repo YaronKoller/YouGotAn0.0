@@ -15,7 +15,23 @@ public class Clothing extends Product{
     super(p, id, a);
   }
   
+  public String getType(){
+    return type;
+  }
+  
+  public String getBrand(){
+    return brand;
+  }
+  
+  public String getColour(){
+    return colour;
+  }
+  
+  public String getMaterial(){
+    return material;
+  }
+  
   public String toString(){
-    return (brand + " " + colour + " " + material + " " + type);
+    return (brand + " " + type + " (" + colour + ")";
   }
 }
