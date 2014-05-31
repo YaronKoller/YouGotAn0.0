@@ -14,4 +14,24 @@ public class Game extends Product{
     ageRestriction = ar;
     super(p, id, a);
   }
+  
+  public String getTitle(){
+    return title;
+  }
+  
+  public String getGenre(){
+    return genre;
+  }
+  
+  public String getDeveloper(){
+    return developer;
+  }
+  
+  public String getAgeRestriction(){
+    return ageRestriction;
+  }
+  
+  public String toString(){
+    return (title + " by " + developer);
+  }
 }
