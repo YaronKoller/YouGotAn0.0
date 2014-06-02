@@ -1,17 +1,20 @@
 package project;
 
 public class Product{
-
+  
   private double price;
   private int ID;
   private int amount;
-  private int[] ratings;
+  private double[] ratings;
   
-  public Food(double p, int id, int a){
+  public Product(double p, int id, int a, double r, int nr){
     price = p;
     ID = id;
     amount = a;
-    ratings = new int[0];
+    
+    ratings = new double[nr];
+    for(int i=0; i<nr; i++)
+      ratings[i] = r;
   }
   
   public void addSingle(){
@@ -30,7 +33,7 @@ public class Product{
   }
   
   public void addRating(int r){
-    int[] temp = new int[ratings.length+1];
+    double[] temp = new double[ratings.length+1];
     
     for(int i=0; i<ratings.length; i++)
       temp[i]=ratings[i];
