@@ -5,14 +5,14 @@ public class Clothing extends Product{
   private String type;
   private String brand;
   private String colour;
-  private String material;
+  private String size;
   
-  public Game(String t, String b, String c, String m, double p, int id, int a){
+  public Clothing(String t, String b, String c, String s, double p, int id, int a, double r, int nr){
+    super(p, id, a, r, nr);
     type = t;
     brand = b;
     colour = c;
-    material = m;
-    super(p, id, a);
+    size = s;
   }
   
   public String getType(){
@@ -27,11 +27,11 @@ public class Clothing extends Product{
     return colour;
   }
   
-  public String getMaterial(){
-    return material;
+  public String getSize(){
+    return size;
   }
   
   public String toString(){
-    return (brand + " " + type + " (" + colour + ")";
+    return (brand + " " + type + " (" + colour + ")");
   }
 }
