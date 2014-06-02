@@ -26,4 +26,8 @@ public class Admin{
   public String getName(){
     return name;
   }
+  
+  public String toString(){
+    return (name + ", " + ID);
+  }
 }
