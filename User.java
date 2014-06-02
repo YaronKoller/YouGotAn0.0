@@ -21,21 +21,16 @@ public class User{
       return false;
   }
   
-  public boolean modifyInfo(int choice, String newInfo){
-    if(choice==1){
-      email = newInfo;
-      return true;
-    }
-    else if(choice==2){
-      password = newInfo;
-      return true;
-    }
-    else if(choice==3){
-      name = newInfo;
-      return true;
-    }
-    else
-      return false;
+  public void changeEmail(String e){
+    email = e;
+  }
+  
+  public void changePass(String p){
+    password = p;
+  }
+  
+  public void changeName(String n){
+    name = n;
   }
   
   public String getEmail(){
@@ -48,5 +43,9 @@ public class User{
   
   public ShoppingCart getCart(){
     return cart;
+  }
+  
+  public String toString(){
+    return (name + ", " + email);
   }
 }
