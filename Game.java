@@ -2,17 +2,15 @@ package project;
 
 public class Game extends Product{
   
-  private String title;
   private String genre;
   private String developer;
-  private String ageRestriction;
+  private String title;
   
-  public Game(String t, String g, String d, String ar, double p, int id, int a){
-    title = t;
+  public Game(String g, String d, String t, double p, int id, int a, double r, int nr){
+    super(p, id, a, r, nr);
     genre = g;
     developer = d;
-    ageRestriction = ar;
-    super(p, id, a);
+    title = t;
   }
   
   public String getTitle(){
@@ -25,10 +23,6 @@ public class Game extends Product{
   
   public String getDeveloper(){
     return developer;
-  }
-  
-  public String getAgeRestriction(){
-    return ageRestriction;
   }
   
   public String toString(){
