@@ -7,12 +7,12 @@ public class Food extends Product{
   private int calories;
   private boolean kosher;
   
-  public Food(String t, String pr, int c, boolean k, double p, int id, int a){
+  public Food(String t, String pr, int c, boolean k, double p, int id, int a, double r, int nr){
+    super(p, id, a, r, nr);
     type = t;
     producer = pr;
     calories = c;
     kosher = k;
-    super(p, id, a);
   }
   
   public String getType(){
