@@ -3,16 +3,16 @@ package project;
 public class ShoppingCart{
   
   private Clothing[] c;
-  private Game[] g;
   private Food[] f;
+  private Game[] g;
   
-  public void ShoppingCart(){
+  public ShoppingCart(){
     c = new Clothing[0];
-    g = new Game[0];
     f = new Food[0];
+    g = new Game[0];
   }
   
-  public void addProduct(cl: Clothing){
+  public void addProduct(Clothing cl){
     Clothing[] temp = new Clothing[c.length+1];
     
     for(int i=0; i<c.length; i++)
@@ -22,17 +22,7 @@ public class ShoppingCart{
     c = temp;
   }
   
-  public void addProduct(ga: Game){
-    Game[] temp = new Game[g.length+1];
-    
-    for(int i=0; i<g.length; i++)
-      temp[i]=g[i];
-    
-    temp[g.length] = ga;
-    g = temp;
-  }
-  
-  public void addProduct(fo: Food){
+  public void addProduct(Food fo){
     Food[] temp = new Food[f.length+1];
     
     for(int i=0; i<f.length; i++)
@@ -42,27 +32,40 @@ public class ShoppingCart{
     f = temp;
   }
   
-  public String[] listProducts(){
-    String list[] = new String[3];
+  public void addProduct(Game ga){
+    Game[] temp = new Game[g.length+1];
+    
+    for(int i=0; i<g.length; i++)
+      temp[i]=g[i];
+    
+    temp[g.length] = ga;
+    g = temp;
+  }
+  
+  public String[] listAll(){
+    String list[] = new String[2];
     
     list[0]="";
-    for(int i=0; i<c.length; i++)
-      list[0] += (c[i].toString() + "_");
+    for(int i=0; i<(c.length-1); i++)
+      list[0] += (c[i].toString() + ",");
+    list[0] += c[c.length-1].toString();
     
     list[1]="";
-    for(int i=0; i<g.length; i++)
-      list[1] += (g[i].toString() + "_");
+    for(int i=0; i<(f.length-1); i++)
+      list[1] += (f[i].toString() + ",");
+    list[1] += f[f.length-1].toString();
     
     list[2]="";
-    for(int i=0; i<f.length; i++)
-      list[2] += (f[i].toString() + "_");
+    for(int i=0; i<(g.length-1); i++)
+      list[2] += (g[i].toString() + ",");
+    list[2] += g[g.length-1].toString();
     
     return list;
   }
   
   public void checkOut(){
     c = new Clothing[0];
-    g = new Game[0];
     f = new Food[0];
+    g = new Game[0];
   }
 }
