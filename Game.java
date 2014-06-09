@@ -3,13 +3,13 @@ package project;
 public class Game extends Product{
   
   private String genre;
-  private String developer;
+  private String publisher;
   private String title;
   
-  public Game(String g, String d, String t, double p, int id, int a, double r, int nr){
+  public Game(String g, String pu, String t, double p, int id, int a, double r, int nr){
     super(p, id, a, r, nr);
     genre = g;
-    developer = d;
+    publisher = pu;
     title = t;
   }
   
@@ -21,11 +21,15 @@ public class Game extends Product{
     return genre;
   }
   
-  public String getDeveloper(){
-    return developer;
+  public String getPublisher(){
+    return publisher;
+  }
+  
+  public String getInfo(){
+    return (genre + ",\t" + publisher + ",\t" + title + ",\t" + super.getInfo());
   }
   
   public String toString(){
-    return (title + " by " + developer);
+    return (title + " (by " + publisher + "), ID: " + getID());
   }
 }
