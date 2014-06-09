@@ -31,7 +31,11 @@ public class Clothing extends Product{
     return size;
   }
   
+  public String getInfo(){
+    return (type + ",\t" + brand + ",\t" + colour + ",\t" + size + ",\t" + super.getInfo());
+  }
+  
   public String toString(){
-    return (brand + " " + type + " (" + colour + ")");
+    return (brand + " " + type + " (" + colour + "), ID: " + getID());
   }
 }
