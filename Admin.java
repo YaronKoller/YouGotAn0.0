@@ -12,7 +12,7 @@ public class Admin{
     name = n;
   }
   
-  public boolean signIn(String pass){
+  public boolean checkPass(String pass){
     if(pass.equals(password))
       return true;
     else
@@ -27,7 +27,11 @@ public class Admin{
     return name;
   }
   
+  public String getInfo(){
+    return (ID + ",\t" + password + ",\t" + name);
+  }
+  
   public String toString(){
-    return (name + ", " + ID);
+    return (name + ", ID: " + ID);
   }
 }
