@@ -1,0 +1,9 @@
+RPG,	Ubisoft Entertainment,	South Park,	64.99,	3006,	5,	4.3,	9
+RPG,	Electronic Arts,	Mass Effect,	29.99,	3015,	4,	3.8,	9
+RPG,	Activision Blizzard,	Diablo III,	44.99,	3023,	6,	4.4,	9
+Action,	Ubisoft Entertainment,	Watch Dogs,	59.99,	3108,	4,	4.5,	9
+Action,	Electronic Arts,	Dead Space,	19.99,	3112,	6,	3.1,	9
+Action,	Activision Blizzard,	Deadpool,	24.99,	3121,	5,	2.9,	9
+FPS,	Ubisoft Entertainment,	Far Cry,	39.99,	3204,	6,	4.6,	9
+FPS,	Electronic Arts,	Titanfall,	59.99,	3217,	5,	3.7,	9
+FPS,	Activision Blizzard,	Call of Duty,	49.99,	3220,	4,	3.2,	9
