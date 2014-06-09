@@ -14,7 +14,7 @@ public class User{
     cart = new ShoppingCart();
   }
   
-  public boolean signIn(String pass){
+  public boolean checkPass(String pass){
     if(pass.equals(password))
       return true;
     else
@@ -45,7 +45,11 @@ public class User{
     return cart;
   }
   
+  public String getInfo(){
+    return (email + ",\t" + password + ",\t" + name);
+  }
+  
   public String toString(){
-    return (name + ", " + email);
+    return (name + ", Email: " + email);
   }
 }
