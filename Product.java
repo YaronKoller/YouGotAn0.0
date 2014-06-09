@@ -55,9 +55,16 @@ public class Product{
   }
   
   public double getAverageRating(){
-    int sum = 0;
+    double sum = 0.0;
+    
     for(int i=0; i<ratings.length; i++)
       sum += ratings[i];
-    return 1.0*sum/ratings.length;
+    
+    double average = 1.0*sum/ratings.length;
+    return (Math.round(average*10))/10.0;
+  }
+  
+  public String getInfo(){
+    return (price + ",\t" + ID + ",\t" + amount + ",\t" + getAverageRating() + ",\t" + ratings.length);
   }
 }
