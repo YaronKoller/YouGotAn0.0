@@ -1,0 +1,9 @@
+Ramen,	P's Choice,	340,	false,	1.49,	20060,	18,	4.3,	9
+Ramen,	No Name,	370,	false,	1.29,	20180,	17,	4.5,	9
+Ramen,	Manischewitz,	350,	true,	1.69,	20271,	19,	3.1,	9
+Steak,	P's Choice,	240,	true,	11.99,	21051,	17,	4.6,	9
+Steak,	No Name,	230,	false,	9.99,	21140,	19,	3.8,	9
+Steak,	Manischewitz,	210,	true,	10.99,	21231,	18,	3.2,	9
+Soda,	P's Choice,	140,	true,	1.99,	22001,	19,	4.4,	9
+Soda,	No Name,	160,	true,	1.79,	22111,	18,	3.7,	9
+Soda,	Manischewitz,	170,	true,	1.89,	22221,	17,	2.9,	9
