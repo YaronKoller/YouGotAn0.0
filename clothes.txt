@@ -1,0 +1,9 @@
+Jeans,	American Eagle,	purple,	32,	49.99,	10031,	10,	2.9,	9
+Jeans,	Bluenotes,	black,	30,	44.99,	10100,	11,	3.1,	9
+Jeans,	Old Navy,	blue,	34,	39.99,	10212,	9,	4.5,	9
+Shirt,	American Eagle,	white,	S,	14.99,	11050,	11,	4.4,	9
+Shirt,	Bluenotes,	blue,	L,	16.99,	11112,	9,	3.8,	9
+Shirt,	Old Navy,	red,	M,	12.99,	11241,	10,	3.2,	9
+Hoodie,	American Eagle,	red,	L,	59.99,	12042,	9,	4.3,	9
+Hoodie,	Bluenotes,	purple,	M,	39.99,	12131,	10,	3.7,	9
+Hoodie,	Old Navy,	green,	S,	49.99,	12220,	11,	4.6,	9
