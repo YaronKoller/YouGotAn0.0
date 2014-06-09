@@ -31,7 +31,11 @@ public class Food extends Product{
     return kosher;
   }
   
+  public String getInfo(){
+    return (type + ",\t" + producer + ",\t" + calories + ",\t" + kosher + ",\t" + super.getInfo());
+  }
+  
   public String toString(){
-    return (producer + " " + type);
+    return (producer + " " + type + ", ID: " + getID());
   }
 }
